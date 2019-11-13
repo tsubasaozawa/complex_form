@@ -1,0 +1,6 @@
+.single-container
+  カード情報入力
+  = form_for @card, url: "/signup", method: :post do |f|
+    カード番号
+    = f.text_field :number
+    = f.submit '送信'
